@@ -1,0 +1,41 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[799],{7317:function(e,n,t){Promise.resolve().then(t.bind(t,6745)),Promise.resolve().then(t.bind(t,2476)),Promise.resolve().then(t.bind(t,3624)),Promise.resolve().then(t.t.bind(t,231,23))},6745:function(e,n,t){"use strict";t.d(n,{FAQAccordion:function(){return f}});var i=t(7437),a=t(2265),o=t(5430),s=t(4232),r=t(4436),l=t(933),c=t(4258),d=t(1240),u=t(500),h=t(1492),y=t(2421);let p=[{question:"What does the name VortexSoft mean?",answer:'"Vortex" represents momentum and precision, while "Soft" reflects technology-driven solutions. Together, VortexSoft signifies intelligent, high-velocity service delivery.',icon:o.Z},{question:"What does VortexSoft Title Services do best?",answer:"• Comprehensive Title Services: Nationwide title search, curative, and abstracting\n• Technology-Enabled Operations: Workflow automation and data accuracy\n• Customer-Focused Delivery: Proactive communication and fast turnaround\n• Secure Processing: ISO-aligned data security and compliance practices\n• Operational Efficiency: Reduced cycle times and consistent quality",icon:s.Z},{question:"What is your online coverage?",answer:"We provide extensive online coverage across most US states and counties, enabling fast and reliable delivery.",icon:r.Z},{question:"What about ground search coverage?",answer:"Our nationwide ground network ensures 96%+ on-time delivery, with standard turnaround under 48 hours, and faster delivery in select states.",icon:l.Z},{question:"Do you have a US-based delivery option?",answer:"Yes. All services can be performed entirely within the United States upon client request.",icon:r.Z},{question:"Tell us about your technology",answer:"We build proprietary workflow tools designed specifically for the title and mortgage industry, improving visibility, control, and turnaround time.",icon:c.Z},{question:"Why choose VortexSoft?",answer:"VortexSoft is a trusted title services partner delivering accuracy, scalability, and compliance—backed by technology and industry expertise.",icon:d.Z},{question:"Do you offer end-to-end services?",answer:"Yes. We provide end-to-end title and mortgage support as well as \xe0-la-carte solutions.",icon:s.Z},{question:"Do you comply with security standards?",answer:"Yes. We follow ISO-aligned information security and quality management practices.",icon:u.Z},{question:"Is customer support available 24/7?",answer:"Yes. We provide 24/7 client support across time zones.",icon:h.Z},{question:"How do you ensure business continuity?",answer:"Our Business Continuity Planning (BCP) and Risk Assessment frameworks ensure uninterrupted service during uncertain events.",icon:u.Z}];function f(){let[e,n]=(0,a.useState)(0);return(0,i.jsx)("div",{className:"space-y-4",children:p.map((t,a)=>(0,i.jsxs)("div",{className:"rounded-2xl border-2 overflow-hidden transition-all duration-300 ".concat(e===a?"border-[#38317F] shadow-lg":"border-[#F4F5F7] hover:border-[#38317F]/30"),children:[(0,i.jsxs)("button",{onClick:()=>n(e===a?null:a),className:"w-full flex items-center gap-4 p-6 text-left transition-colors",style:{backgroundColor:e===a?"#F4F5F7":"#FFFFFF"},children:[(0,i.jsx)("div",{className:"w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors",style:{backgroundColor:e===a?"#38317F":"#F4F5F7"},children:(0,i.jsx)(t.icon,{className:"h-5 w-5 transition-colors",style:{color:e===a?"#FFFFFF":"#38317F"}})}),(0,i.jsx)("span",{className:"flex-1 font-semibold text-lg",style:{color:"#2E2E2E"},children:t.question}),(0,i.jsx)(y.Z,{className:"h-5 w-5 transition-transform duration-300 ".concat(e===a?"rotate-180":""),style:{color:"#38317F"}})]}),(0,i.jsx)("div",{className:"overflow-hidden transition-all duration-300 ".concat(e===a?"max-h-96":"max-h-0"),children:(0,i.jsx)("div",{className:"px-6 pb-6 pt-2",children:(0,i.jsx)("div",{className:"pl-14 whitespace-pre-line leading-relaxed",style:{color:"#A5A0A3"},children:t.answer})})})]},a))})}},4232:function(e,n,t){"use strict";t.d(n,{Z:function(){return i}});/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,t(8030).Z)("Building2",[["path",{d:"M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z",key:"1b4qmf"}],["path",{d:"M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2",key:"i71pzd"}],["path",{d:"M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2",key:"10jefs"}],["path",{d:"M10 6h4",key:"1itunk"}],["path",{d:"M10 10h4",key:"tcdvrf"}],["path",{d:"M10 14h4",key:"kelpxr"}],["path",{d:"M10 18h4",key:"1ulq68"}]])},2421:function(e,n,t){"use strict";t.d(n,{Z:function(){return i}});/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,t(8030).Z)("ChevronDown",[["path",{d:"m6 9 6 6 6-6",key:"qrunsl"}]])},933:function(e,n,t){"use strict";t.d(n,{Z:function(){return i}});/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,t(8030).Z)("Clock",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16 14",key:"68esgv"}]])},4436:function(e,n,t){"use strict";t.d(n,{Z:function(){return i}});/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,t(8030).Z)("Globe",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20",key:"13o1zl"}],["path",{d:"M2 12h20",key:"9i4pu4"}]])},1492:function(e,n,t){"use strict";t.d(n,{Z:function(){return i}});/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,t(8030).Z)("Headphones",[["path",{d:"M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3",key:"1xhozi"}]])},4258:function(e,n,t){"use strict";t.d(n,{Z:function(){return i}});/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,t(8030).Z)("Settings",[["path",{d:"M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z",key:"1qme2f"}],["circle",{cx:"12",cy:"12",r:"3",key:"1v7zrd"}]])},1240:function(e,n,t){"use strict";t.d(n,{Z:function(){return i}});/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,t(8030).Z)("Users",[["path",{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",key:"1yyitq"}],["circle",{cx:"9",cy:"7",r:"4",key:"nufk8"}],["path",{d:"M22 21v-2a4 4 0 0 0-3-3.87",key:"kshegd"}],["path",{d:"M16 3.13a4 4 0 0 1 0 7.75",key:"1da9ce"}]])},5430:function(e,n,t){"use strict";t.d(n,{Z:function(){return i}});/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,t(8030).Z)("Zap",[["path",{d:"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z",key:"1xq2db"}]])}},function(e){e.O(0,[531,616,971,23,744],function(){return e(e.s=7317)}),_N_E=e.O()}]);
