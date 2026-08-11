@@ -241,6 +241,13 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  transition: var(--transition);
+  cursor: pointer;
 }
 
 .dropdown-arrow {
@@ -254,23 +261,36 @@ ul { list-style: none; }
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%) translateY(12px);
-  width: 620px;
+  transform: translateX(-50%) translateY(8px);
+  width: 600px;
+  max-width: calc(100vw - 2rem);
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(56, 49, 127, 0.12);
   border-radius: var(--radius-xl);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-  padding: 1.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+  padding: 1.25rem 1.5rem;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1100;
 }
 
-.nav-item-dropdown:hover .nav-dropdown-menu {
+/* Invisible bridge element so mouse move from link to menu doesn't close dropdown */
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background: transparent;
+}
+
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown-menu:hover {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -280,7 +300,13 @@ ul { list-style: none; }
 .dropdown-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1.25rem;
+}
+@media (max-width: 640px) {
+  .dropdown-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .dropdown-col {
@@ -367,8 +393,8 @@ ul { list-style: none; }
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
-.nav-mobile.open { max-height: 400px; }
-.nav-mobile-link { padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-weight: 500; color: var(--text-primary); transition: var(--transition); }
+.nav-mobile.open { max-height: 850px; overflow-y: auto; }
+.nav-mobile-link { padding: 0.65rem 1rem; border-radius: var(--radius-sm); font-weight: 500; color: var(--text-primary); transition: var(--transition); }
 .nav-mobile-link:hover { background: var(--brand-light); color: var(--brand-navy); }
 
 .nav-spacer { height: var(--nav-height); }
