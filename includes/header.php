@@ -95,7 +95,102 @@ $currentPage     = basename($_SERVER['SCRIPT_FILENAME'], '.php');
     <!-- Desktop Links -->
     <div class="nav-links">
       <a href="/" class="nav-link <?= ($currentPage === 'home' || $_SERVER['REQUEST_URI'] === '/') ? 'active' : '' ?>">Home</a>
-      <a href="/services" class="nav-link <?= str_contains($_SERVER['REQUEST_URI'], 'services') ? 'active' : '' ?>">Services</a>
+      
+      <!-- Services Dropdown -->
+      <div class="nav-item-dropdown">
+        <a href="/services" class="nav-link nav-dropdown-toggle <?= str_contains($_SERVER['REQUEST_URI'], 'services') ? 'active' : '' ?>">
+          Services
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <div class="dropdown-grid">
+            <div class="dropdown-col">
+              <div class="dropdown-header">Primary Title &amp; Mortgage</div>
+              <a href="/services#title-search" class="dropdown-item">
+                <span class="dropdown-icon">🔍</span>
+                <div>
+                  <div class="dropdown-title">Title Search &amp; Abstracting</div>
+                  <div class="dropdown-desc">Current owner, full chain, O&amp;E reports</div>
+                </div>
+              </a>
+              <a href="/services#tax-services" class="dropdown-item">
+                <span class="dropdown-icon">🏦</span>
+                <div>
+                  <div class="dropdown-title">Tax Services &amp; Municipal Lien</div>
+                  <div class="dropdown-desc">Property tax certificates &amp; reports</div>
+                </div>
+              </a>
+              <a href="/services#typing-services" class="dropdown-item">
+                <span class="dropdown-icon">⌨️</span>
+                <div>
+                  <div class="dropdown-title">Title Typing &amp; Commitments</div>
+                  <div class="dropdown-desc">ALTA schedules &amp; policy typing</div>
+                </div>
+              </a>
+              <a href="/services#settlement-services" class="dropdown-item">
+                <span class="dropdown-icon">🤝</span>
+                <div>
+                  <div class="dropdown-title">Settlement &amp; Closing</div>
+                  <div class="dropdown-desc">Closing doc prep &amp; disbursement</div>
+                </div>
+              </a>
+              <a href="/services#mortgage-services" class="dropdown-item">
+                <span class="dropdown-icon">🏢</span>
+                <div>
+                  <div class="dropdown-title">Mortgage Support Services</div>
+                  <div class="dropdown-desc">Processing, underwriting &amp; post-closing</div>
+                </div>
+              </a>
+            </div>
+            <div class="dropdown-col secondary-col">
+              <div class="dropdown-header">Secondary Enterprise Group Services</div>
+              <a href="/#secondary-enterprise-services" class="dropdown-item">
+                <span class="dropdown-icon">🏥</span>
+                <div>
+                  <div class="dropdown-title">Healthcare BPO &amp; RCM</div>
+                  <div class="dropdown-desc">HIPAA billing, coding &amp; claims</div>
+                </div>
+              </a>
+              <a href="/#secondary-enterprise-services" class="dropdown-item">
+                <span class="dropdown-icon">🤖</span>
+                <div>
+                  <div class="dropdown-title">AI &amp; Automation</div>
+                  <div class="dropdown-desc">LLM agents, IDP &amp; data annotation</div>
+                </div>
+              </a>
+              <a href="/#secondary-enterprise-services" class="dropdown-item">
+                <span class="dropdown-icon">💻</span>
+                <div>
+                  <div class="dropdown-title">Custom Software &amp; ERP</div>
+                  <div class="dropdown-desc">Full-stack web, mobile &amp; SAP</div>
+                </div>
+              </a>
+              <a href="https://www.vortexsoftinnovations.com/digital-marketing-service/index.php" target="_blank" rel="noopener" class="dropdown-item">
+                <span class="dropdown-icon">🚀</span>
+                <div>
+                  <div class="dropdown-title">Digital Marketing &amp; MarTech ↗</div>
+                  <div class="dropdown-desc">SEO, PPC &amp; lead generation</div>
+                </div>
+              </a>
+              <a href="/#secondary-enterprise-services" class="dropdown-item">
+                <span class="dropdown-icon">📚</span>
+                <div>
+                  <div class="dropdown-title">STM Publishing &amp; Prepress</div>
+                  <div class="dropdown-desc">Journal typesetting &amp; ePUB3</div>
+                </div>
+              </a>
+              <a href="/#secondary-enterprise-services" class="dropdown-item">
+                <span class="dropdown-icon">📊</span>
+                <div>
+                  <div class="dropdown-title">Accounting &amp; Financial BPO</div>
+                  <div class="dropdown-desc">Bookkeeping, ledger &amp; payroll</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <a href="/about" class="nav-link <?= str_contains($_SERVER['REQUEST_URI'], 'about') ? 'active' : '' ?>">About</a>
       <a href="/contact" class="nav-link <?= str_contains($_SERVER['REQUEST_URI'], 'contact') ? 'active' : '' ?>">Contact Us</a>
     </div>
@@ -117,7 +212,14 @@ $currentPage     = basename($_SERVER['SCRIPT_FILENAME'], '.php');
   <!-- Mobile Menu -->
   <div class="nav-mobile" id="navMobile">
     <a href="/" class="nav-mobile-link">Home</a>
-    <a href="/services" class="nav-mobile-link">Services</a>
+    <a href="/services" class="nav-mobile-link">All Services</a>
+    <div style="padding-left:1rem;display:flex;flex-direction:column;gap:0.3rem;">
+      <a href="/services#title-search" class="nav-mobile-link" style="font-size:0.85rem;color:var(--brand-navy);">• Title Search &amp; Abstracting</a>
+      <a href="/services#tax-services" class="nav-mobile-link" style="font-size:0.85rem;color:var(--brand-navy);">• Tax Services</a>
+      <a href="/services#typing-services" class="nav-mobile-link" style="font-size:0.85rem;color:var(--brand-navy);">• Title Typing &amp; Commitments</a>
+      <a href="/services#settlement-services" class="nav-mobile-link" style="font-size:0.85rem;color:var(--brand-navy);">• Settlement &amp; Closing</a>
+      <a href="/#secondary-enterprise-services" class="nav-mobile-link" style="font-size:0.85rem;color:var(--brand-red);">• Secondary Enterprise Services</a>
+    </div>
     <a href="/about" class="nav-mobile-link">About</a>
     <a href="/contact" class="nav-mobile-link">Contact Us</a>
     <a href="tel:+13072050681" class="btn-primary mt-3">📞 1-307-205-0681</a>
