@@ -1,0 +1,26 @@
+# Robots.txt for VortexSoft Title Services & Vortexsoft Group
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+# Explicitly allow AI / Answer Engine crawlers for AEO & GEO indexability
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://www.vortexsofttitles.com/sitemap.xml
