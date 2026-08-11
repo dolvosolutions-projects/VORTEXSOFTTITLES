@@ -1,8 +1,13 @@
 # Robots.txt for VortexSoft Title Services & Vortexsoft Group
 User-agent: *
-Allow: /
+Disallow: /admin/
+Disallow: /config/
+Disallow: /database/
+Disallow: /vendor/
+Disallow: /install.php
 Disallow: /_next/
 Disallow: /api/
+Allow: /
 
 # Explicitly allow AI / Answer Engine crawlers for AEO & GEO indexability
 User-agent: GPTBot
